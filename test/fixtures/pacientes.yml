@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  primer_nombre: MyString
+  segundo_nombre: MyString
+  primer_apellido: MyString
+  segundo_apellido: MyString
+  sexo: MyString
+  tlf: 1
+  direccion: MyString
+  historia_medica: 
+  fecha_nacimiento: 2012-01-18
+  lugar_nacimiento: MyString
+  nombre_padre: MyString
+  nombre_madre: MyString
+  seguro_social: MyString
+  provincia: MyString
+  distrito: MyString
+  corregimiento: MyString
+  nombre_urgencias: MyString
+  parentesco: MyString
+  telefono_urgencias: 1
+
+two:
+  id: 1
+  primer_nombre: MyString
+  segundo_nombre: MyString
+  primer_apellido: MyString
+  segundo_apellido: MyString
+  sexo: MyString
+  tlf: 1
+  direccion: MyString
+  historia_medica: 
+  fecha_nacimiento: 2012-01-18
+  lugar_nacimiento: MyString
+  nombre_padre: MyString
+  nombre_madre: MyString
+  seguro_social: MyString
+  provincia: MyString
+  distrito: MyString
+  corregimiento: MyString
+  nombre_urgencias: MyString
+  parentesco: MyString
+  telefono_urgencias: 1

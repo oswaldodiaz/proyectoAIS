@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cita:</b>
+  <%= @citum.cita_id %>
+</p>
+
+<p>
+  <b>Paciente:</b>
+  <%= @citum.paciente %>
+</p>
+
+<p>
+  <b>Medico:</b>
+  <%= @citum.medico %>
+</p>
+
+<p>
+  <b>Tipo paciente:</b>
+  <%= @citum.tipo_paciente %>
+</p>
+
+<p>
+  <b>Frecuentacion inst:</b>
+  <%= @citum.frecuentacion_inst %>
+</p>
+
+<p>
+  <b>Frecuentacion serv:</b>
+  <%= @citum.frecuentacion_serv %>
+</p>
+
+<p>
+  <b>Tipo atencion:</b>
+  <%= @citum.tipo_atencion %>
+</p>
+
+<p>
+  <b>Atencion por:</b>
+  <%= @citum.atencion_por %>
+</p>
+
+<p>
+  <b>Area referencia:</b>
+  <%= @citum.area_referencia %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @citum.fecha %>
+</p>
+
+<p>
+  <b>Turno:</b>
+  <%= @citum.turno %>
+</p>
+
+<p>
+  <b>Informe medico:</b>
+  <%= @citum.informe_medico %>
+</p>
+
+
+<%= link_to 'Edit', edit_citum_path(@citum) %> |
+<%= link_to 'Back', cita_path %>

@@ -1,0 +1,21 @@
+<%= form_for(@historia_medica) do |f| %>
+  <% if @historia_medica.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@historia_medica.errors.count, "error") %> prohibited this historia_medica from being saved:</h2>
+
+      <ul>
+      <% @historia_medica.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numero_expediente %><br />
+    <%= f.number_field :numero_expediente %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

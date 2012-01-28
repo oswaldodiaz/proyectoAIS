@@ -2,13 +2,35 @@
 <html>
 <head>
   <title>ProyectoAIS</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+ <%= javascript_include_tag "jquery-ui-1.8.17.custom.min" %>
+ <%= javascript_include_tag "jquery-1.7.1" %>
+ <%= javascript_include_tag "rails" %>
+ <%= javascript_include_tag "jquery.ui.widget" %>
+ <%= javascript_include_tag "jquery.ui.tabs" %>
+ <%= javascript_include_tag "jquery.ui.core" %>
+ <%= stylesheet_link_tag "jquery-ui-1.8.17.custom" %>
+ <%= stylesheet_link_tag "jquery.ui.tabs" %>
+ <%= stylesheet_link_tag "jquery.ui.base" %>
+ <%= stylesheet_link_tag "jquery.ui.all" %>
+ <%= stylesheet_link_tag "jquery.ui.theme" %>
+ <%= stylesheet_link_tag "demos" %>
+
+ <%= csrf_meta_tags %>
+
+ 	
 </head>
 <body>
 
 <%= yield %>
+
+<div id = "editar">
+ 	<%= link_to 'Edit', edit_paciente_path(@paciente) %>
+	
+</div>
+
+<div id = "cita">
+	<%= link_to 'New Citum', new_citum_path %>
+</div>
 
 </body>
 </html>

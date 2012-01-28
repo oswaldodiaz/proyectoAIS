@@ -1,4 +1,16 @@
 ProyectoAIS::Application.routes.draw do
+  resources :historia_medicas
+
+  get "home/index"
+
+  resources :cita
+
+  resources :medicos
+
+  resources :usuarios
+
+  resources :pacientes
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +60,7 @@ ProyectoAIS::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 

@@ -1,0 +1,45 @@
+<h1>Listing cita</h1>
+
+<table>
+  <tr>
+    <th>Cita</th>
+    <th>Paciente</th>
+    <th>Medico</th>
+    <th>Tipo paciente</th>
+    <th>Frecuentacion inst</th>
+    <th>Frecuentacion serv</th>
+    <th>Tipo atencion</th>
+    <th>Atencion por</th>
+    <th>Area referencia</th>
+    <th>Fecha</th>
+    <th>Turno</th>
+    <th>Informe medico</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cita.each do |citum| %>
+  <tr>
+    <td><%= citum.cita_id %></td>
+    <td><%= citum.paciente %></td>
+    <td><%= citum.medico %></td>
+    <td><%= citum.tipo_paciente %></td>
+    <td><%= citum.frecuentacion_inst %></td>
+    <td><%= citum.frecuentacion_serv %></td>
+    <td><%= citum.tipo_atencion %></td>
+    <td><%= citum.atencion_por %></td>
+    <td><%= citum.area_referencia %></td>
+    <td><%= citum.fecha %></td>
+    <td><%= citum.turno %></td>
+    <td><%= citum.informe_medico %></td>
+    <td><%= link_to 'Show', citum %></td>
+    <td><%= link_to 'Edit', edit_citum_path(citum) %></td>
+    <td><%= link_to 'Destroy', citum, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Citum', new_citum_path %>

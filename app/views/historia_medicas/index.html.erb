@@ -1,0 +1,23 @@
+<h1>Listing historia_medicas</h1>
+
+<table>
+  <tr>
+    <th>Numero expediente</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @historia_medicas.each do |historia_medica| %>
+  <tr>
+    <td><%= historia_medica.numero_expediente %></td>
+    <td><%= link_to 'Show', historia_medica %></td>
+    <td><%= link_to 'Edit', edit_historia_medica_path(historia_medica) %></td>
+    <td><%= link_to 'Destroy', historia_medica, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Historia medica', new_historia_medica_path %>

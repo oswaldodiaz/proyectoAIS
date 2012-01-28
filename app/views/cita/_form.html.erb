@@ -1,0 +1,65 @@
+<%= form_for(@citum) do |f| %>
+  <% if @citum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@citum.errors.count, "error") %> prohibited this citum from being saved:</h2>
+
+      <ul>
+      <% @citum.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cita_id %><br />
+    <%= f.number_field :cita_id %>
+  </div>
+  <div class="field">
+    <%= f.label :paciente %><br />
+    <%= f.text_field :paciente %>
+  </div>
+  <div class="field">
+    <%= f.label :medico %><br />
+    <%= f.text_field :medico %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_paciente %><br />
+    <%= f.number_field :tipo_paciente %>
+  </div>
+  <div class="field">
+    <%= f.label :frecuentacion_inst %><br />
+    <%= f.number_field :frecuentacion_inst %>
+  </div>
+  <div class="field">
+    <%= f.label :frecuentacion_serv %><br />
+    <%= f.number_field :frecuentacion_serv %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_atencion %><br />
+    <%= f.number_field :tipo_atencion %>
+  </div>
+  <div class="field">
+    <%= f.label :atencion_por %><br />
+    <%= f.text_field :atencion_por %>
+  </div>
+  <div class="field">
+    <%= f.label :area_referencia %><br />
+    <%= f.text_field :area_referencia %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.date_select :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :turno %><br />
+    <%= f.text_field :turno %>
+  </div>
+  <div class="field">
+    <%= f.label :informe_medico %><br />
+    <%= f.text_area :informe_medico %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
